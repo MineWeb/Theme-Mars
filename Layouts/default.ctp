@@ -15,17 +15,16 @@
     <meta property="og:title" content="<?= $website_name ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="<?= $this->Html->url('/') ?>" />
-    <meta property="og:image" content="<?= $theme_config['favicon_url'] ?>" />
+    <meta property="og:image" content="<?= (isset($theme_config) && isset($theme_config['favicon_url'])) ? $theme_config['favicon_url'] : '' ?>" />
 
     <!-- Bootstrap & FA -->
     <?= $this->Html->css('bootstrap.min.css'); ?>
     <?= $this->Html->css('font-awesome.min.css'); ?>
-    <?= $this->Html->css('../font-awesome-4.1.0/css/font-awesome.min.css'); ?>
 
     <?= $this->Html->css('custom.css'); ?>
 
 
-    <link rel="icon" type="image/png" href="<?= $theme_config['favicon_url'] ?>" />
+    <link rel="icon" type="image/png" href="<?= (isset($theme_config) && isset($theme_config['favicon_url'])) ? $theme_config['favicon_url'] : '' ?>" />
   </head>
   <body>
     <div id="loader"></div>
@@ -47,7 +46,6 @@
     <?= $this->Html->script('form.js') ?>
     <?= $this->Html->script('notification.js') ?>
     <?= $this->Html->script('easy_paginate.js'); ?>
-    <?= $this->Html->script('bootstrap-carousel.js'); ?>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js"></script>

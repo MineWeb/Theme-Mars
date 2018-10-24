@@ -81,7 +81,7 @@
               <div class="col-lg-4">
                 <div class="box">
                   <img src="<?= $item['img_url'] ?>" width="100%" class="bdcolor-bottom">
-                  <a href="#" class="display-item" data-item-id="'.$item['id'].'"><h3 class="white center"><?= $item['name'] ?> (<?= $item['price'] ?> <img src="https://cdn.discordapp.com/attachments/372425208872566785/396009393100947460/money.png" width="20px">)</h3></a>
+                  <a href="#" class="display-item" data-item-id="<?= $item['id'] ?>"><h3 class="white center"><?= $item['name'] ?> (<?= $item['price'] ?> <img src="https://cdn.discordapp.com/attachments/372425208872566785/396009393100947460/money.png" width="20px">)</h3></a>
                 </div>
                 <br>
               </div>

@@ -37,6 +37,11 @@ if(isset($config['logo']) && $config['logo']) {
                      <td><input type="text" class="form-control" name="color" value="<?= $theme_config['color'] ?>"></td>
                    </tr>
                    <tr>
+                     <td><?= $Lang->get('THEME__FAVICON_URL') ?></td>
+                     <td><i>Par default : #</i></td>
+                     <td><input type="text" class="form-control" name="favicon_url" value="<?= $theme_config['favicon_url'] ?>"></td>
+                   </tr>
+                   <tr>
                      <td>Image du "slider"</td>
                      <td><i>Par default : #</i></td>
                      <td><input type="text" class="form-control" name="bg-img" value="<?= $theme_config['bg-img'] ?>"></td>

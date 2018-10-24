@@ -7,7 +7,9 @@
 .right{float:right;}
 a:hover{text-decoration: none;}
 body{background-color: #111111;}
-
+label {
+    color:white;
+}
 #loader {
 	position: fixed;
 	top: 0;

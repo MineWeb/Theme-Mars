@@ -29,7 +29,7 @@
   <body>
     <div id="loader"></div>
       <?= $this->element('css'); ?>
-      <?= $this->element('header'); ?>
+      <?= $this->element('navbar'); ?>
 
         <?= $this->fetch('content'); ?>
 
@@ -39,7 +39,7 @@
 
     <!-- Modal -->
 
-    <?= $this->element('modal'); ?>
+    <?= $this->element('modals'); ?>
     <!-- JS -->
 
     <?= $this->Html->script('app.js') ?>

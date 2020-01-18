@@ -22,7 +22,7 @@
           <?php if($isConnected) { ?>
           <div class="panel panel-default bdcolor-top">
           <div class="panel-body">
-            <span class="MankSans">Mes crédits</span> <span class="badge bgcolor"><?= $money.' '.$Configuration->getMoneyName(); ?></span><br><br>
+            <span class="MankSans">Mes crédits</span> <span class="badge bgcolor"><?= $money; ?></span><br><br>
               <?php if($Permissions->can('CREDIT_ACCOUNT')) { ?>
                   <span class="badge bgcolor"><a href="#" data-toggle="modal" data-target="#addmoney" class=" white" style="margin-top:20px; color:white;"><?= $Lang->get('SHOP__ADD_MONEY') ?></a></span>
             <?php } ?>

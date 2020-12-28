@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
     <meta name="author" content="Tronai, MineWeb">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <title><?= $website_name ?> - <?= $title_for_layout; ?></title>
+    <title><?= $seo_config['title'] ?></title>
+    <link rel="icon" type="image/png" href="<?= $seo_config['favicon_url'] ?>"/>
+    <meta name="title" content="<?= $seo_config['title'] ?>">
+    <meta property="og:title" content="<?= $seo_config['title'] ?>">
+    <meta name="description" content="<?= $seo_config['description'] ?>">
+    <meta property="og:description" content="<?= $seo_config['description'] ?>">
+    <meta property="og:image" content="<?= $seo_config['img_url'] ?>">
 
     <!-- OG -->
 
@@ -22,9 +27,6 @@
     <?= $this->Html->css('font-awesome.min.css'); ?>
 
     <?= $this->Html->css('custom.css'); ?>
-
-
-    <link rel="icon" type="image/png" href="<?= (isset($theme_config) && isset($theme_config['favicon_url'])) ? $theme_config['favicon_url'] : '' ?>" />
   </head>
   <body>
     <div id="loader"></div>

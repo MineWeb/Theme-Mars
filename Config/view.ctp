@@ -10,18 +10,18 @@ if(isset($config['logo']) && $config['logo']) {
 <section class="content">
   <div class="row">
     <div class="col-md-12">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3><span class="pull-right">Tronai</span>
+      <div class="card">
+        <div class="card-header with-border">
+          <h3 class="card-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3><span class="pull-right">Tronai</span>
         </div>
-        <div class="box-body">
+        <div class="card-body">
 
 
 
           <div class="tabbable">
             <ul class="nav nav-tabs">
-             <li class="active"><a href="#tab1" data-toggle="tab">Option General</a></li>
-             <li><a href="#tab4" data-toggle="tab">Achievement</a></li>
+             <li class="active"><a href="#tab1" class="nav-link text-dark" data-toggle="tab">Option General</a></li>
+             <li><a href="#tab4" class="nav-link text-dark" data-toggle="tab">Achievement</a></li>
              </ul>
              <form method="post" enctype="multipart/form-data" data-ajax="false">
           <div class="tab-content">
@@ -35,11 +35,6 @@ if(isset($config['logo']) && $config['logo']) {
                      <td>Couleur du background</td>
                      <td><i>Par default : #</i></td>
                      <td><input type="text" class="form-control" name="color" value="<?= $theme_config['color'] ?>"></td>
-                   </tr>
-                   <tr>
-                     <td><?= $Lang->get('THEME__FAVICON_URL') ?></td>
-                     <td><i>Par default : #</i></td>
-                     <td><input type="text" class="form-control" name="favicon_url" value="<?= $theme_config['favicon_url'] ?>"></td>
                    </tr>
                    <tr>
                      <td>Image du "slider"</td>
